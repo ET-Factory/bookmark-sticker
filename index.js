@@ -3,7 +3,7 @@ const getCurrentURL = (event) => event.target.URL;
 window.addEventListener("load", (event) => {
   const currentURL = getCurrentURL(event);
   const scrollPositionY = Number(window.localStorage.getItem(currentURL));
-  if (scrollPositionY) window.scrollTo(0, y);
+  if (scrollPositionY) window.scrollTo(0, scrollPositionY);
 });
 
 window.addEventListener("unload", (event) => {
