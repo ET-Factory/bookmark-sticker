@@ -1,3 +1,4 @@
 window.addEventListener("scroll", () => {
-  console.log("hi");
+  const y = window.scrollY;
+  console.log("scrolly" + y);
 });
